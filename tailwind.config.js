@@ -26,17 +26,22 @@ module.exports = {
         tight: 1.2,
       },
       fontFamily: {
-        // 'sans': ['ui-sans-serif', 'system-ui', ...],
-        'serif': ["ivypresto-headline", 'serif'], // 700
+        'sans': ['quasimoda', 'sans-serif'], // 400
+        'serif': ['ivypresto-headline', 'serif'], // 700
         // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
-        'display': ["joschmi", 'sans-serif'], // 400
-        // 'body': ['"Open Sans"', ...],
+        'display': ['joschmi', 'sans-serif'], // 400
+        'body': ['quasimoda', 'sans-serif'], // 300
       },
       fontSize: {
         '5xl': '2.5rem',
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
+      },
+      backgroundImage: {
+        'body-texture': "url('/img/noise1.png')",
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
