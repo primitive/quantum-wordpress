@@ -19,8 +19,8 @@ export default function HeroPost({
         )}
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
+        <div className='animate-fade-left animate-once animate-duration[800ms] border-solid border-2 border-primary p-4 bg-lighter shadow-xl'>
+          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight font-serif font-bold">
             <Link
               href={`/posts/${slug}`}
               className="hover:underline"
@@ -31,7 +31,7 @@ export default function HeroPost({
             <Date dateString={date} />
           </div>
         </div>
-        <div>
+        <div className='animate-fade-up animate-once animate-duration-[800ms] animate-delay-[600ms]'>
           <div
             className="text-lg leading-relaxed mb-4"
             dangerouslySetInnerHTML={{ __html: excerpt }}

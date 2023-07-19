@@ -10,10 +10,11 @@ module.exports = {
         'accent-1': '#565656',
         'accent-2': '#1c1917',
         'accent-7': '#333',
-        success: '#0070f3',
+        success: '#358357',
         cyan: '#79FFE1',
-        primary: 'hsl(var(--color-primary) / <alpha-value>)',
+        primary: '#bd7b00',
         secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+        tertiary: '#bd7b00',
         
       },
       spacing: {
@@ -49,5 +50,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
