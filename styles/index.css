@@ -1,6 +1,22 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@layer base {
+  :root {
+    --color-black: 44, 45, 72;
+    --color-primary: 255 115 179;
+    --color-secondary: 111 114 185;
+    --color-bg-hsl: 34, 100, 92;
+    /* ... */
+  }
+  /* body {
+    @apply bg-orange-100;
+  } */
+  /* h1 {
+    @apply font-serif;
+  } */
+}
+
 
 /* Start purging... */
 @tailwind components;
@@ -8,11 +24,18 @@
 
 /* Write you own custom component styles here */
 
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
+@import url("https://use.typekit.net/xwn1evh.css");
+
 /* Your own custom utilities */
+
+.bg-custom {
+  background-color: #FFEDD6;
+}
 
 .has-text-align-left {
   @apply text-left;
