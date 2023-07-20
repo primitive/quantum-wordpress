@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/primitive/quantum-wordpress">
-    <img src="docs?primitive.svg" alt="Primitive" width="80" height="80">
+    <img src="docs/primitive.svg" alt="Primitive" width="160" height="80">
   </a>
 
 <h3 align="center">Quantum WordPress</h3>
@@ -39,9 +39,10 @@ This repo was created from the Next.js showcase for the [Incremental Static Rege
 
 
 ## Dev notes and links
-https://vercel.com/guides/wordpress-with-vercel
-https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
-https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
+- https://vercel.com/guides/wordpress-with-vercel
+- https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
+- https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
+
 **To Do**
 - Primitive's Rolling Mountains | Beautiful Views
 
