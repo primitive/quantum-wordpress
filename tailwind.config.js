@@ -7,12 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'accent-1': '#565656',
-        'accent-2': '#1c1917',
+        'accent-1': '#2e210f',
+        'accent-2': '#0a0600',
         'accent-7': '#333',
-        success: '#358357',
+        success: '#358357', // green
+        warn: '#f7a63b', // yellow
         cyan: '#79FFE1',
-        primary: '#bd7b00',
+        primary: '#bd7b00', // deep orange
         secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
         tertiary: '#bd7b00',
         
@@ -41,8 +42,8 @@ module.exports = {
       },
       backgroundImage: {
         'body-texture': "url('/img/noise1.png')",
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        // 'hero-pattern': "url('/img/hero-pattern.svg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
