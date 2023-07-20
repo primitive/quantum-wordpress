@@ -4,6 +4,7 @@ This example showcases Next.js's [Incremental Static Regeneration](https://nextj
 
 https://vercel.com/guides/wordpress-with-vercel
 https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
+https://nextjs.org/docs/messages/next-image-upgrade-to-13
 
 https://www.tailwindcss-animated.com/
 
