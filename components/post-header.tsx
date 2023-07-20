@@ -14,10 +14,10 @@ export default function PostHeader({
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
+      <div className="hidden md:block md:mb-12 animate-fade-left animate-once animate-ease-out animate-delay-[600ms] animate-duration-[1000ms]">
         <Avatar author={author} />
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div className="mb-8 md:mb-16 sm:mx-0 animate-fade animate-once animate-ease-out animate-delay-[1200ms] animate-duration-[1500ms]">
         <CoverImage title={title} coverImage={coverImage} />
       </div>
       <div className="max-w-2xl mx-auto">
