@@ -5,8 +5,8 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/primitive/quantum-wordpress">
+    <img src="docs?primitive.svg" alt="Primitive" width="80" height="80">
   </a>
 
 <h3 align="center">Quantum WordPress</h3>
@@ -14,22 +14,20 @@
   <p align="center">
     A starter theme for Next.js Headless-WordPress deployments.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/primitive/quantum-wordpress"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="">View Demo (TBC)</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/primitive/quantum-wordpress/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/primitive/quantum-wordpress/issues">Request Feature</a>
   </p>
 </div>
 
-••Next.js ISR Based Wordpress Website Starter••
+**Next.js ISR Based Wordpress Website Starter**
+This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source. [WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
 
-This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature using [WordPress](https://wordpress.org) as the data source.
-
-Primitive's Rolling Mountains | Beautiful Views
 
 
 #### Table of Contents
@@ -39,10 +37,13 @@ Primitive's Rolling Mountains | Beautiful Views
 - [Customisation](#customisation)
 - [Deployment](#deployment)
 
+
+## Dev notes and links
 https://vercel.com/guides/wordpress-with-vercel
 https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
 https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
-
+**To Do**
+- Primitive's Rolling Mountains | Beautiful Views
 
 
 ### Features
@@ -55,21 +56,13 @@ https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layout
 
   
 
-## Deployment
-
-  
-
-Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=quantum-wordpress):
-
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
 
   
   
 ### Next.js Basic Example
 **[https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)**
 
-## How to use
+## How to Roll your own
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
@@ -233,6 +226,15 @@ http://localhost:3000/api/preview?secret=<secret>&id=<id>
 - Alternatively, you can use `<slug>` instead of `<id>`. `<slug>` is generated based on the title.
 
 You should now be able to see this post. To exit Preview Mode, you can click on **Click here to exit preview mode** at the top.
+
+
+## Deployment
+
+Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=quantum-wordpress):
+
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
+
 
 ### Step 7. Deploy on Vercel
 
