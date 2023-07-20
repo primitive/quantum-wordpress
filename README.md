@@ -1,41 +1,73 @@
-# An Incremental Static Regeneration Blog Using Next.js and WordPress
 
-This example showcases Next.js's [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature using [WordPress](https://wordpress.org) as the data source.
+![screenshot](docs/pd-quantum-wordpress.png)
+
+# Quantum WordPress
+
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Quantum WordPress</h3>
+
+  <p align="center">
+    A starter theme for Next.js Headless-WordPress deployments.
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+  </p>
+</div>
+
+••Next.js ISR Based Wordpress Website Starter••
+
+This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature using [WordPress](https://wordpress.org) as the data source.
+
+Primitive's Rolling Mountains | Beautiful Views
+
+
+#### Table of Contents
+
+- [Features](#features)
+- [Development](#development)
+- [Customisation](#customisation)
+- [Deployment](#deployment)
 
 https://vercel.com/guides/wordpress-with-vercel
 https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
-https://nextjs.org/docs/messages/next-image-upgrade-to-13
+https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
 
-https://www.tailwindcss-animated.com/
 
-## Demo
 
-### [https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)
+### Features
+- Tailwind CSS
+- Easily add animation using the [tailwindcss animated](https://www.tailwindcss-animated.com/) [configurator](https://www.tailwindcss-animated.com/configurator.html).
 
-## Deploy your own
+  
 
-Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+
+
+  
+
+## Deployment
+
+  
+
+Once you have access to [the environment variables you'll need](#step-3-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=quantum-wordpress):
+
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
 
-### Related examples
-
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Ghost](/examples/cms-ghost)
-- [Blog Starter](/examples/blog-starter)
-- [Builder.io](/examples/cms-builder-io)
-- [DotCMS](/examples/cms-dotcms)
+  
+  
+### Next.js Basic Example
+**[https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)**
 
 ## How to use
 
