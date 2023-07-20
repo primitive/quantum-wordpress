@@ -4,16 +4,26 @@
 @layer base {
   :root {
     --color-black: 44, 45, 72;
-    --color-primary: 255 115 179;
+    --color-primary: 39 100 37;
     --color-secondary: 111 114 185;
+    --color-warning: 255 115 179;
     --color-bg-hsl: 34, 100, 92;
+    //--color-font-rgb: 44, 45, 72;
+    --color-font-rgb: 26, 14, 0;
     /* ... */
   }
-  /* body {
-    @apply bg-orange-100;
-  } */
+  body {
+    color: rgb(var(--color-font-rgb));
+  }
   /* h1 {
     @apply font-serif;
+  } */
+
+  p {
+    @apply font-light;
+  }
+  /* i {
+    @apply text-primary;
   } */
 }
 
@@ -35,6 +45,12 @@
 
 .bg-custom {
   background-color: #FFEDD6;
+}
+.text-shadow-custom {
+  text-shadow: 1px 1px 1px #fffbf5;
+}
+.bg-lighter {
+  background-color: rgba(255 255 255 / 0.33);
 }
 
 .has-text-align-left {
