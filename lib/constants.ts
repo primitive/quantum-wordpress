@@ -1,4 +1,5 @@
-export const EXAMPLE_PATH = 'cms-wordpress'
+export const GITHUB_PATH = 'https://github.com/primitive'
+export const FONTS_URL = 'https://use.typekit.net/xwn1evh.css'
 export const CMS_NAME = 'WordPress'
 export const CMS_URL = 'https://wordpress.org'
 export const HOME_OG_IMAGE_URL =
