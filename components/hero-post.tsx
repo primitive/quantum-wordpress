@@ -19,7 +19,7 @@ export default function HeroPost({
         )}
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div className='animate-fade-left animate-once animate-duration[800ms] rounded-xl border-solid border-2 border-primary p-4 bg-lighter shadow-md hover:shadow-2xl transition duration-300 ease-out'>
+        <div className='animate-fade-left animate-once animate-duration[800ms] rounded-xl border-solid border-2 border-t-8 border-primary p-4 bg-lighter shadow-md hover:shadow-2xl transition duration-300 ease-out'>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight font-serif font-bold">
             <Link
               href={`/posts/${slug}`}

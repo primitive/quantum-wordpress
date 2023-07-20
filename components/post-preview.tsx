@@ -12,13 +12,13 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
+    <div className="animate-fade animate-once animate-duration-1000 animate-delay-[1500ms] shadow-in bg-light rounded-xl border-solid border-2 border-t-8 border-secondary p-4">
       <div className="mb-5">
         {coverImage && (
           <CoverImage title={title} coverImage={coverImage} slug={slug} />
         )}
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-4xl mb-3 font-bold font-sans leading-snug">
         <Link
           href={`/posts/${slug}`}
           className="hover:underline"
