@@ -2,6 +2,11 @@
 
 This example showcases Next.js's [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature using [WordPress](https://wordpress.org) as the data source.
 
+https://vercel.com/guides/wordpress-with-vercel
+https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
+
+https://www.tailwindcss-animated.com/
+
 ## Demo
 
 ### [https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)
