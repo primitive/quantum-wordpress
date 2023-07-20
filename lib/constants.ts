@@ -1,4 +1,4 @@
-export const GITHUB_PATH = 'https://github.com/primitive'
+export const GITHUB_PATH = 'https://github.com/primitive/quantum-wordpress'
 export const FONTS_URL = 'https://use.typekit.net/xwn1evh.css'
 export const CMS_NAME = 'WordPress'
 export const CMS_URL = 'https://wordpress.org'
