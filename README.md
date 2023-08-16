@@ -21,13 +21,16 @@
     ·
     <a href="https://github.com/primitive/quantum-wordpress/issues">Request Feature</a>
   </p>
+  <p align="center">
+  **Next.js Headless-Wordpress Website Starter**
+
+  This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source.
+
+  [WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
+  </p>
 </div>
 
-**Next.js Based Wordpress Website Starter**
 
-This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source.
-
-[WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
 
 
 
