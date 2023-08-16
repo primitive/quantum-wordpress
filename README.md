@@ -26,7 +26,8 @@
 </div>
 
 **Next.js ISR Based Wordpress Website Starter**
-This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source. [WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
+This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source.
+[WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
 
 
 
@@ -44,7 +45,7 @@ This repo was created from the Next.js showcase for the [Incremental Static Rege
 - https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
 
 **To Do**
-- Primitive's Rolling Mountains | Beautiful Views
+- Rework: Primitive's Rolling Mountains | Beautiful Views
 
 
 ### Features
@@ -60,28 +61,11 @@ This repo was created from the Next.js showcase for the [Incremental Static Rege
 
   
   
-### Next.js Basic Example
-**[https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)**
 
-## How to Roll your own
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example cms-wordpress cms-wordpress-app
-```
-
-```bash
-yarn create next-app --example cms-wordpress cms-wordpress-app
-```
-
-```bash
-pnpm create next-app --example cms-wordpress cms-wordpress-app
-```
 
 ## Configuration
 
-### Step 1. Prepare your WordPress site
+### Step 1. Get WordPress
 
 First, you need a WordPress site.
 
@@ -262,3 +246,24 @@ To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [
 Alternatively, you can deploy using our template by clicking on the Deploy button below.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
+
+
+
+### This is based on the Next.js Starter Example
+**[https://next-blog-wordpress.vercel.app](https://next-blog-wordpress.vercel.app)**
+
+## If you would rather Roll your own from Scratch
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+
+```bash
+npx create-next-app --example cms-wordpress cms-wordpress-app
+```
+
+```bash
+yarn create next-app --example cms-wordpress cms-wordpress-app
+```
+
+```bash
+pnpm create next-app --example cms-wordpress cms-wordpress-app
+```
