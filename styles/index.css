@@ -43,11 +43,41 @@
 
 /* Your own custom utilities */
 
+.popshadow {
+  text-rendering: optimizeLegibility;
+  background-color: #d5d5d5;
+  letter-spacing: .05em;
+  text-shadow: 
+    1px 1px 0px #d5d5d5, 
+    3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.insetshadow {
+  text-rendering: optimizeLegibility;
+  color: var(--color-font-rgb);
+  /* background-color: #2d2d2d; */
+  letter-spacing: .1em;
+  text-shadow: 
+    -1px -1px 1px #111, 
+    2px 2px 1px #363636;
+}
+
+.shadow-out {
+box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.07), 50px 50px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-in {
+box-shadow: -6px -6px 8px rgba(0, 0, 0, 0.1), 5px 5px 8px rgba(0, 0, 0, 0.07);
+}
+
 .bg-custom {
   background-color: #FFEDD6;
 }
 .text-shadow-custom {
   text-shadow: 1px 1px 1px #fffbf5;
+}
+.bg-light {
+  background-color: rgba(255 255 255 / 0.18);
 }
 .bg-lighter {
   background-color: rgba(255 255 255 / 0.33);
