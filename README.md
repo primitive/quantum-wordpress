@@ -1,9 +1,9 @@
 
+# Quantum WordPress
 ![screenshot](docs/pd-quantum-wordpress.png)
 
-# Quantum WordPress
-
 <br />
+<hr>
 <div align="center">
   <a href="https://github.com/primitive/quantum-wordpress">
     <img src="docs/primitive.svg" alt="Primitive" width="160" height="80">
