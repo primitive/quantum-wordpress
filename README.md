@@ -83,9 +83,19 @@ pnpm create next-app --example cms-wordpress cms-wordpress-app
 
 ### Step 1. Prepare your WordPress site
 
-First, you need a WordPress site. There are many solutions for WordPress hosting, such as [WP Engine](https://wpengine.com/) and [WordPress.com](https://wordpress.com/).
+First, you need a WordPress site.
 
-Once the site is ready, you'll need to install the [WPGraphQL](https://www.wpgraphql.com/) plugin. It will add GraphQL API to your WordPress site, which we'll use to query the posts. Follow these steps to install it:
+We recommend the Super Green, 100% renewable energy powered, Eco Next-Gen WordPress Hosting from [Primitive Hosting](https://primitivehosting.uk/store/wordpress-hosting).
+
+The database and installation will be set up for you and you will be able to access your WordPress website from the URL provided in the welcome email.
+
+Just follow the [installation steps](https://developer.wordpress.org/advanced-administration/before-install/howto-install/#finishing-installation) to complete the site configuration.
+
+Once the site is ready, you'll need to install the [WPGraphQL](https://www.wpgraphql.com/) plugin to use this repo.
+
+This will add a GraphQL API to your WordPress site, which we'll use to query the posts.
+
+Follow these steps to install it:
 
 - Download the [WPGraphQL repo](https://github.com/wp-graphql/wp-graphql) as a ZIP archive.
 - Inside your WordPress admin, go to **Plugins** and then click **Add New**.
