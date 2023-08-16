@@ -2,17 +2,15 @@
 # Quantum WordPress
 ![screenshot](docs/pd-quantum-wordpress.png)
 
-<br />
 <hr>
 <div align="center">
   <a href="https://github.com/primitive/quantum-wordpress">
     <img src="docs/primitive.svg" alt="Primitive" width="160" height="80">
   </a>
-
-<h3 align="center">Quantum WordPress</h3>
+  <h3 align="center">Quantum WordPress</h3>
 
   <p align="center">
-    A starter theme for Next.js Headless-WordPress deployments.
+    A starter theme for Next.js based Headless-WordPress deployments.
     <br />
     <a href="https://github.com/primitive/quantum-wordpress"><strong>Explore the docs »</strong></a>
     <br />
@@ -25,8 +23,10 @@
   </p>
 </div>
 
-**Next.js ISR Based Wordpress Website Starter**
+**Next.js Based Wordpress Website Starter**
+
 This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source.
+
 [WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
 
 
@@ -39,7 +39,7 @@ This repo was created from the Next.js showcase for the [Incremental Static Rege
 - [Deployment](#deployment)
 
 
-## Dev notes and links
+### Dev notes and links
 - https://vercel.com/guides/wordpress-with-vercel
 - https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
 - https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
@@ -48,19 +48,10 @@ This repo was created from the Next.js showcase for the [Incremental Static Rege
 - Rework: Primitive's Rolling Mountains | Beautiful Views
 
 
-### Features
+## Features
 - Tailwind CSS
 - Easily add animation using the [tailwindcss animated](https://www.tailwindcss-animated.com/) [configurator](https://www.tailwindcss-animated.com/configurator.html).
 
-  
-
-
-
-  
-
-
-  
-  
 
 
 ## Configuration
@@ -74,6 +65,8 @@ We recommend the Super Green, 100% renewable energy powered, Eco Next-Gen WordPr
 The database and installation will be set up for you and you will be able to access your WordPress website from the URL provided in the welcome email.
 
 Just follow the [installation steps](https://developer.wordpress.org/advanced-administration/before-install/howto-install/#finishing-installation) to complete the site configuration.
+
+### Step 2. Add the WPGraphQL plugin
 
 Once the site is ready, you'll need to install the [WPGraphQL](https://www.wpgraphql.com/) plugin to use this repo.
 
@@ -100,12 +93,12 @@ The [WPGraphQL](https://www.wpgraphql.com/) plugin also gives you access to a Gr
 
 ![WPGraphiQL page](./docs/wp-graphiql.png)
 
-### Step 2. Populate Content
+### Step 3. Add some Posts to WordPress
 
 Inside your WordPress admin, go to **Posts** and start adding new posts:
 
 - We recommend creating at least **2 posts**
-- Use dummy data for the content
+- Use [dummy data](https://www.lipsum.com/) for the content if you want
 - Pick an author from your WordPress users
 - Add a **Featured Image**. You can download one from [Unsplash](https://unsplash.com/)
 - Fill the **Excerpt** field
@@ -116,7 +109,7 @@ When you’re done, make sure to **Publish** the posts.
 
 > **Note:** Only **published** posts and public fields will be rendered by the app unless [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode) is enabled.
 
-### Step 3. Set up environment variables
+### Step 4. Set up environment variables
 
 Copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
 
@@ -136,7 +129,7 @@ WORDPRESS_API_URL=...
 # WORDPRESS_PREVIEW_SECRET=
 ```
 
-### Step 4. Run Next.js in development mode
+### Step 5. Run Next.js in development mode
 
 ```bash
 npm install
