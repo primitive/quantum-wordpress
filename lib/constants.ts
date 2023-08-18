@@ -5,6 +5,7 @@ export const CMS_URL = 'https://wordpress.org'
 
 export const SITE_TITLE = 'SKNOW.IT | Design & Development done with Style'
 export const SITE_NAME = 'SKNOW.it'
+export const SITE_TAGLINE = 'Builders of a Better Web'
 export const SITE_BANNER_TEXT = '🖖 Greetings'
 export const SITE_BANNER_LINK = 'https://github.com/primitive/quantum-wordpress'
 export const SITE_BANNER_LINK_TEXT = 'Learn More'
