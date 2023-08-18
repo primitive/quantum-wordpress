@@ -1,6 +1,8 @@
 import Container from './container'
+import Image from 'next/image'
+import githubIcon from "../public/img/github-white.svg"
 import cn from 'classnames'
-import { GITHUB_PATH } from '../lib/constants'
+import { SITE_BANNER_TEXT, SITE_BANNER_LINK, SITE_BANNER_LINK_TEXT } from '../lib/constants'
 
 export default function Alert({ preview }) {
   return (
@@ -25,14 +27,21 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
+              {`${SITE_BANNER_TEXT}`}{' '}
               <a
-                href={`${GITHUB_PATH}`}
+                href={`${SITE_BANNER_LINK}`}
                 className="underline hover:text-primary duration-200 transition-colors"
               >
-                available on GitHub
+                {`${SITE_BANNER_LINK_TEXT}`}
               </a>
               .
+              <Image
+                priority
+                src={githubIcon}
+                alt="Star on GitHub"
+                title="Star on GitHub"
+                className="w-5 float-right"
+              />
             </>
           )}
         </div>
