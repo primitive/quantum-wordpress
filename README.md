@@ -22,16 +22,10 @@
     <a href="https://github.com/primitive/quantum-wordpress/issues">Request Feature</a>
   </p>
   <p align="center">
-  **Next.js Headless-Wordpress Website Starter**
-
-  This repo was created from the Next.js showcase for the [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) feature with [WordPress](https://wordpress.org) as the data source.
-
-  [WPGraphQL](https://www.wpgraphql.com/) is used to query the data from WordPress.
+    Built with Next.js, leveraging [WordPress](https://wordpress.org) as the backend with API data served via [WPGraphQL](https://www.wpgraphql.com/).
   </p>
 </div>
-
-
-
+<hr>
 
 
 #### Table of Contents
@@ -52,8 +46,10 @@
 
 
 ## Features
-- Tailwind CSS
-- Easily add animation using the [tailwindcss animated](https://www.tailwindcss-animated.com/) [configurator](https://www.tailwindcss-animated.com/configurator.html).
+- Next.js (React Web Framework) for a nippy frontend
+- [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) performed server side for fast page loads
+- [Tailwind CSS](https://tailwindcss.com/) for rapid styling
+- Enhance with animations easily using the [tailwindcss animated](https://www.tailwindcss-animated.com/) [configurator](https://www.tailwindcss-animated.com/configurator.html).
 
 
 
