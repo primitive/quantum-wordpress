@@ -12,9 +12,10 @@ module.exports = {
         'accent-7': '#333',
         success: '#358357', // green
         warn: '#f7a63b', // yellow
-        cyan: '#79FFE1',
+        info: '#567899', // blue
+        danger: '#c55334', // red
         primary: '#bd7b00', // deep orange
-        secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+        secondary: '#2e210f', // brown
         tertiary: '#bd7b00',
         
       },
