@@ -91,6 +91,10 @@
   transform: skew(-12deg) translateX(-50%);
   background: rgba(229,104,58,0.5);
   z-index: -1;
+  transition: all .9s ease;
+}
+a.mpen:hover:after {
+  background: rgba(229,104,58,0.8);
 }
 
 .has-text-align-left {
