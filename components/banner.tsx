@@ -4,12 +4,12 @@ import githubIcon from "../public/img/github-white.svg"
 import cn from 'classnames'
 import { SITE_BANNER_TEXT, SITE_BANNER_LINK, SITE_BANNER_LINK_TEXT } from '../lib/constants'
 
-export default function Alert({ preview }) {
+export default function Banner({ preview }) {
   return (
     <div
       className={cn('border-b', {
         'bg-accent-7 border-accent-7 text-white': preview,
-        'bg-accent-1 border-accent-2 font-sans text-yellow-50': !preview,
+        'bg-accent-1 border-primary font-sans text-yellow-50': !preview,
       })}
     >
       <Container>
