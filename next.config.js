@@ -16,4 +16,6 @@ module.exports = {
       'secure.gravatar.com',
     ],
   },
+    // Use the CDN in production and localhost for development.
+    assetPrefix: isProd ? 'https://quantum-wordpress.vercel.app/' : undefined,
 }
