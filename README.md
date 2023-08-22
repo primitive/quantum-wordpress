@@ -12,7 +12,7 @@
   <p align="center">
     A starter theme for Headless-WordPress deployments.
     <br />
-    <a href="how-to-build-a-headless-wordpress-cms-website-with-next-js"><strong>Explore the docs »</strong></a>
+    <a href="https://www.sknow.it/posts/how-to-build-a-headless-wordpress-cms-website-with-next-js"><strong>Explore the docs »</strong></a>
     <br>
     <br>
     <a href="https://primitive.press/">View Demo</a>
@@ -22,9 +22,8 @@
     <a href="https://github.com/primitive/quantum-wordpress/issues">Request Feature</a>
   </p>
   <p align="center">
-    Built standing on the <a href="https://wordpress.org">on the shoulders of giants</a> whilst looking to the future and wondering what's <a href="https://nextjs.org/">next</a>?
-
-    
+    Built standing on the <a href="https://wordpress.org">on the shoulders of giants</a> whilst looking to the future and wondering what's <a href="https://nextjs.org/">next</a>...
+    <br>
     Made by <a href="https://primitivedigital.uk/">Monkies</a>  ☙ ❦ 🐒 - 🐒 - 🐒 ❦ ❧<br>
     & crafted with ❤️ 🍌 ❤️ <br>
   </p>
