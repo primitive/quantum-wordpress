@@ -18,19 +18,11 @@ export default function Intro() {
         <h4 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
           {INTRO_TEXT}{" "}
           <a
-            href="https://nextjs.org/"
+            href="/contact"
             className="underline hover:text-success duration-300 font-display transition-colors"
           >
-            Next.js
-          </a>{" "}
-          and{" "}
-          <a
-            href={CMS_URL}
-            className="underline hover:text-success duration-300 font-display transition-colors"
-          >
-            {CMS_NAME}
+            Get in Touch
           </a>
-          .
         </h4>
       </div>
     </section>
