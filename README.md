@@ -10,19 +10,23 @@
   <h3 align="center">Quantum WordPress</h3>
 
   <p align="center">
-    A starter theme for Next.js based Headless-WordPress deployments.
+    A starter theme for Headless-WordPress deployments.
     <br />
-    <a href="https://github.com/primitive/quantum-wordpress"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="">View Demo (TBC)</a>
+    <a href="how-to-build-a-headless-wordpress-cms-website-with-next-js"><strong>Explore the docs »</strong></a>
+    <br>
+    <br>
+    <a href="https://primitive.press/">View Demo</a>
     ·
     <a href="https://github.com/primitive/quantum-wordpress/issues">Report Bug</a>
     ·
     <a href="https://github.com/primitive/quantum-wordpress/issues">Request Feature</a>
   </p>
   <p align="center">
-    Built with Next.js, leveraging [WordPress](https://wordpress.org) as the backend with API data served via [WPGraphQL](https://www.wpgraphql.com/).
+    Built standing on the <a href="https://wordpress.org">on the shoulders of giants</a> whilst looking to the future and wondering what's <a href="https://nextjs.org/">next</a>?
+
+    
+    Made by <a href="https://primitivedigital.uk/">Monkies</a>  ☙ ❦ 🐒 - 🐒 - 🐒 ❦ ❧<br>
+    & crafted with ❤️ 🍌 ❤️ <br>
   </p>
 </div>
 <hr>
@@ -40,14 +44,19 @@
 
 **To Do**
 - Fix: Animate in view https://codepen.io/jamesdoc/pen/qBbeOym
-- Rework: Primitive's Rolling Mountains | Beautiful Views
+- Migrate old Fronity work: Primitive Mountains | Beautiful Views
+- Migrate old Fronity work: Primitive Rocks / Pebbles
+- Migrate/redo old Fronity work: Primitive Scenes
+- Implement Embeddable mode as per: [Faust.js](https://faustjs.org/) for WordPress data fetching
 
 
 ## Features
-- Next.js (React Web Framework) for a nippy frontend
-- [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) performed server side for fast page loads
-- [Tailwind CSS](https://tailwindcss.com/) for rapid styling
-- Enhance with animations easily using the [tailwindcss animated](https://www.tailwindcss-animated.com/) [configurator](https://www.tailwindcss-animated.com/configurator.html).
+- [WordPress](https://wordpress.org) as a Headless CMS for instant backend, content management portal and API server
+- [Next.js](https://nextjs.org/), React Web Framework based for a nippy frontend
+- [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) performed server side for fast page loads without the expense of SSR
+- [Tailwind CSS](https://tailwindcss.com/) for rapid styling and customisation
+- [Tailwindcss animated](https://www.tailwindcss-animated.com/) for easy to impliment animations via the [configurator](https://www.tailwindcss-animated.com/configurator.html) tool
+- [WPGraphQL](https://www.wpgraphql.com/) for optimised WordPress data fetching
 
 
 
@@ -237,10 +246,16 @@ Alternatively, you can deploy using our template by clicking on the Deploy butto
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
 
-### Dev notes and links
+### SK: Dev notes and links
 - https://vercel.com/guides/wordpress-with-vercel
 - https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
 - https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
+- https://stackoverflow.com/questions/43281741/how-to-use-paths-in-tsconfig-json
+- https://api.frontity.org/frontity-plugins/
+- https://nextjs.org/docs/app/api-reference/next-config-js/assetPrefix
+- https://nextjs.org/docs/pages/building-your-application/configuring/absolute-imports-and-module-aliases
+- https://faustjs.org/guide/how-to-use-the-faust-example-project
+
 
 
 ### This is based on the Next.js Starter Example
@@ -261,3 +276,13 @@ yarn create next-app --example cms-wordpress cms-wordpress-app
 ```bash
 pnpm create next-app --example cms-wordpress cms-wordpress-app
 ```
+
+#### Ω - *the end*
+
+ ☙ ❦ 🐒 - 🐒 - 🐒 ❦ ❧    
+<pre>                      
+._ _  _. _| _  |_    ._ _  _ ._ | o _  _  
+| | |(_|(_|(/_ |_)\/ | | |(_)| ||<|(/__>  
+                  /                      
+</pre>
+> [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
