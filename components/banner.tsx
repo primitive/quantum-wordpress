@@ -39,7 +39,6 @@ export default function Banner({ preview }) {
               >
                 {`${SITE_BANNER_LINK_TEXT}`}
               </a>
-              .
               <a href={`${GITHUB_REPO}`} target="_blank">
                 <Image
                   priority
