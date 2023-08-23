@@ -1,7 +1,16 @@
-import Container from './container'
+import Container from "./container";
 import Image from "next/image";
 import primitiveIcon from "../public/img/primitive.svg";
-import { GITHUB_REPO, FOOTER_BTN_TEXT, FOOTER_BTN_LINK, FOOTER_BTN2_TEXT, FOOTER_BTN2_LINK, FOOTER_COLOPHON, FOOTER_TEXT, FOOTER_HEADER } from '../lib/constants'
+import {
+  GITHUB_REPO,
+  FOOTER_BTN_TEXT,
+  FOOTER_BTN_LINK,
+  FOOTER_BTN2_TEXT,
+  FOOTER_BTN2_LINK,
+  FOOTER_COLOPHON,
+  FOOTER_TEXT,
+  FOOTER_HEADER,
+} from "../lib/constants";
 
 export default function Footer() {
   return (
@@ -9,7 +18,6 @@ export default function Footer() {
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
-
             <Image
               priority
               src={primitiveIcon}
@@ -42,12 +50,12 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="text-center">  
-            <p className="p-3 pb-4 text-sm tracking-wider leading-tight text-center text-amber-800">
-              {FOOTER_COLOPHON}
-            </p>
+        <div className="text-center">
+          <p className="p-3 pb-4 text-sm tracking-wider leading-tight text-center text-amber-800">
+            {FOOTER_COLOPHON}
+          </p>
         </div>
       </Container>
     </footer>
-  )
+  );
 }
