@@ -67,9 +67,9 @@ First, you need a WordPress site.
 
 We recommend the Super Green, 100% renewable energy powered, Eco Next-Gen WordPress Hosting from [Primitive Hosting](https://primitivehosting.uk/store/wordpress-hosting).
 
-The database and installation will be set up for you and you will be able to access your WordPress website from the URL provided in the welcome email.
+The database and installation will be set up for you and you will be able to access your WordPress website from the URL provided in your welcome email.
 
-Just follow the [installation steps](https://developer.wordpress.org/advanced-administration/before-install/howto-install/#finishing-installation) to complete the site configuration.
+Simply follow the final [installation steps](https://developer.wordpress.org/advanced-administration/before-install/howto-install/#finishing-installation) to complete your site configuration.
 
 ### Step 2. Add the WPGraphQL plugin
 
@@ -79,7 +79,6 @@ This will add a GraphQL API to your WordPress site, which we'll use to query the
 
 Follow these steps to install it:
 
-- Download the [WPGraphQL repo](https://github.com/wp-graphql/wp-graphql) as a ZIP archive.
 - Inside your WordPress admin, go to **Plugins** and then click **Add New**.
 
 ![Add new plugin](./docs/plugins-add-new.png)
