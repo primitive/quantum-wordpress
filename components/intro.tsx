@@ -1,4 +1,4 @@
-import { CMS_NAME, CMS_URL, SITE_NAME, SITE_TAGLINE, THEME_NAME, INTRO_TEXT, THEME_HEADER} from "../lib/constants";
+import { CMS_NAME, CMS_URL, SITE_NAME, SITE_TAGLINE, THEME_NAME, INTRO_TEXT, THEME_HEADER, INTRO_CTA, INTRO_CTA_LINK} from "../lib/constants";
 
 export default function Intro() {
   return (
@@ -18,10 +18,10 @@ export default function Intro() {
         <h4 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
           {INTRO_TEXT}{" "}
           <a
-            href="/contact"
+            href={INTRO_CTA_LINK}
             className="underline hover:text-success duration-300 font-display transition-colors"
           >
-            Get in Touch
+            {INTRO_CTA}
           </a>
         </h4>
       </div>
