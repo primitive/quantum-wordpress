@@ -10,6 +10,7 @@ import {
   FOOTER_COLOPHON,
   FOOTER_TEXT,
   FOOTER_HEADER,
+  FOOTER_TEXT2,
 } from "../lib/constants";
 
 export default function Footer() {
@@ -23,14 +24,17 @@ export default function Footer() {
               src={primitiveIcon}
               alt="Primitive Digital"
               title="Primitive Digital"
-              className="w-[170px] h-auto opacity-50 m-auto mb-1 lg:ml-0 lg:mb-0"
+              className="w-[170px] h-auto opacity-50 m-auto mb-1 lg:ml-0 lg:mb-0 "
             />
 
             <h4 className="text-3xl lg:text-4xl leading-tight text-center text-success pl-2 lg:text-left mb-4 lg:mb-0 lg:pr-4">
               {FOOTER_HEADER}
             </h4>
-            <p className="text-xl lg:text-2xl tracking-tighter leading-tight text-center text-success pl-2 lg:text-left mb-10 lg:mb-0 lg:pr-4">
+            <p className="text-xl lg:text-2xl tracking-tighter leading-tight text-center text-success pl-2 lg:text-left mb-5 lg:mb-0 lg:pr-4">
               {FOOTER_TEXT}
+            </p>
+            <p className="text-l lg:text-xl tracking-wider leading-tight text-center text-success pl-2 lg:text-left mb-10 lg:mb-0 lg:pr-4">
+              {FOOTER_TEXT2}
             </p>
           </div>
 
