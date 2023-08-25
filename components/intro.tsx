@@ -1,4 +1,4 @@
-import { CMS_NAME, CMS_URL, SITE_NAME, SITE_TAGLINE, THEME_NAME, INTRO_TEXT, THEME_HEADER, INTRO_CTA, INTRO_CTA_LINK} from "../lib/constants";
+import { SITE_NAME, SITE_TAGLINE, THEME_NAME, INTRO_TEXT, THEME_HEADER, INTRO_CTA, INTRO_CTA_LINK} from "../lib/constants";
 
 export default function Intro() {
   return (
