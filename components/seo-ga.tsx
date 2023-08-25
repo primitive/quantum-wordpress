@@ -2,10 +2,10 @@ import Script from "next/script";
 
 export default function GA() {
 
-  const GA_ID = process.env.GA_MEASUREMENT_ID;
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-  // if (GA_ID) {
-  //   console.log("GA_ID is there", GA_ID);
+  if (GA_ID) {
+  console.log("GA_ID is there", GA_ID);
 
     return (
       <>
@@ -25,9 +25,9 @@ export default function GA() {
         </Script>
       </>
     );
-  //}
-  // else {
-  //   console.log("GA_ID false");
-  //   return null;
-  // }
+  }
+  else {
+    console.log("GA_ID false");
+    return null;
+  }
 }
