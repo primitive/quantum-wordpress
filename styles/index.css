@@ -110,13 +110,13 @@ a.mpen:hover:after {
 
 .btn-secondary {
   @apply inline-block bg-secondary text-primary text-sm no-underline py-2 px-6 mt-4 border-2 border-primary rounded-lg;
-  box-shadow: 1px 0px 10px rgba(var(--color-font-rgb), .5);
-  transition: all .6s ease;
+  box-shadow: -1px 1px 10px rgba(var(--color-font-rgb), .5);
+  transition: all .4s ease;
 }
 .btn-secondary:hover {
   @apply text-white border-white;
-  text-shadow: 1px 0px 10px rgba(var(--color-font-rgb), .5);
-  box-shadow: 1px 0px 3px rgba(var(--color-font-rgb), .7);
+  text-shadow: 1px 0px 10px rgba(var(--color-font-rgb), .4);
+  box-shadow: 0px 0px 2px rgba(var(--color-font-rgb), .5);
 }
 
 .has-text-align-left {
