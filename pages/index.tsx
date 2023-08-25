@@ -5,6 +5,7 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
+import GA from '../components/seo-ga'
 import { getAllPostsForHome } from '../lib/api'
 import { SITE_TITLE } from '../lib/constants'
 
@@ -17,6 +18,7 @@ export default function Index({ allPosts: { edges }, preview }) {
       <Head>
         <title>{SITE_TITLE}</title>
       </Head>
+      <GA />
       <Container>
         <Intro />
         {heroPost && (
