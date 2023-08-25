@@ -11,6 +11,11 @@ export default function PostPreview({
   author,
   slug,
 }) {
+  
+  if (excerpt) {
+    excerpt = excerpt.replace(process.env.NEXT_PUBLIC_WORDPRESS_URL, "");
+  }
+
   return (
     <div className="animate-fade animate-once animate-duration-1000 animate-delay-[1500ms] shadow-in bg-light rounded-xl border-solid border-2 border-t-8 border-secondary p-4">
       <div className="mb-5">

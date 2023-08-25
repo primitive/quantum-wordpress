@@ -12,6 +12,11 @@ export default function HeroPost({
   author,
   slug,
 }) {
+
+  if (excerpt) {
+    excerpt = excerpt.replace(process.env.NEXT_PUBLIC_WORDPRESS_URL, "");
+  }
+
   return (
     <section>
       <div className="mb-8 md:mb-16">
