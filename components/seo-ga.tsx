@@ -26,9 +26,9 @@ export default function GA() {
       </>
     );
   }
+  // Type 'boolean' is not assignable to type 'ReactElement<any, any>'.
   else {
-
     console.log("GA_ID false");
-    return false;
+    return null;
   }
 }
