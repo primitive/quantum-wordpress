@@ -4,8 +4,8 @@ export default function GA() {
 
   const GA_ID = process.env.GA_MEASUREMENT_ID;
 
-  if (GA_ID) {
-    console.log("GA_ID is there", GA_ID);
+  // if (GA_ID) {
+  //   console.log("GA_ID is there", GA_ID);
 
     return (
       <>
@@ -25,10 +25,9 @@ export default function GA() {
         </Script>
       </>
     );
-  }
-  // Type 'boolean' is not assignable to type 'ReactElement<any, any>'.
-  else {
-    console.log("GA_ID false");
-    return null;
-  }
+  //}
+  // else {
+  //   console.log("GA_ID false");
+  //   return null;
+  // }
 }
