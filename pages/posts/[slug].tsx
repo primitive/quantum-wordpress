@@ -3,10 +3,11 @@ import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
 import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
+import PostBody from '../../components/post-body'
+import PostHeader from '../../components/post-header-overlay'
+import MoreStories from '../../components/more-stories'
+import PostMeta from '../../components/post-meta'
 import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import GA from '../../components/seo-ga'
@@ -45,11 +46,13 @@ export default function Post({ post, posts, preview }) {
               <PostHeader
                 title={post.title}
                 coverImage={post.featuredImage}
-                date={post.date}
-                author={post.author}
-                categories={post.categories}
               />
               <PostBody content={post.content} />
+              <PostMeta 
+                  date={post.date}
+                  author={post.author}
+                  categories={post.categories}
+              />
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
