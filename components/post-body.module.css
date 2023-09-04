@@ -47,8 +47,19 @@
   @apply text-xl mt-6 mb-4 leading-snug;
 }
 
-.content pre {
+/* .content pre {
   @apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-gray-400 bg-gray-100;
+} */
+
+.content pre {
+  @apply border-secondary;
+  color: white;
+  background-color: var(--bg-dark);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: .44em;
+  padding: 1em;
+  overflow-x: scroll;
 }
 
 .content code {
