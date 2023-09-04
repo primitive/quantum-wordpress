@@ -1,6 +1,6 @@
 {
   "name": "quantum-wordpress",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "description": "Starter Theme for Next.js Headless-WordPress deployments.",
   "scripts": {
