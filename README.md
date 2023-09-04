@@ -37,16 +37,7 @@
 - [Development](#development)
 - [Customisation](#customisation)
 - [Deployment](#deployment)
-
-
-
-
-**To Do**
-- Fix: Animate in view https://codepen.io/jamesdoc/pen/qBbeOym
-- Migrate old Fronity work: Primitive Mountains | Beautiful Views
-- Migrate old Fronity work: Primitive Rocks / Pebbles
-- Migrate/redo old Fronity work: Primitive Scenes
-- Implement Embeddable mode as per: [Faust.js](https://faustjs.org/) for WordPress data fetching
+- [Contributing](#contributing)
 
 
 ## Features
@@ -245,15 +236,56 @@ Alternatively, you can deploy using our template by clicking on the Deploy butto
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress&project-name=cms-wordpress&repository-name=cms-wordpress&env=WORDPRESS_API_URL&envDescription=Required%20to%20connect%20the%20app%20with%20WordPress&envLink=https://vercel.link/cms-wordpress-env)
 
 ### SK: Dev notes and links
-- https://vercel.com/guides/wordpress-with-vercel
 - https://vercel.com/templates/next.js/isr-blog-nextjs-wordpress
-- https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts
 - https://stackoverflow.com/questions/43281741/how-to-use-paths-in-tsconfig-json
-- https://api.frontity.org/frontity-plugins/
 - https://nextjs.org/docs/app/api-reference/next-config-js/assetPrefix
 - https://nextjs.org/docs/pages/building-your-application/configuring/absolute-imports-and-module-aliases
-- https://faustjs.org/guide/how-to-use-the-faust-example-project
 
+
+### Tasks
+- [x] MVP - Basic [Next.js with WP GraphQL](https://vercel.com/guides/wordpress-with-vercel)
+- [x] Add Tailwind CSS
+- [x] Add [Tailwindcss animated](https://www.tailwindcss-animated.com/)
+- [ ] Add [Static pages](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts)
+
+- [ ] Content - Publish WP Content (how to make apps content for Dex)
+- [x] Style  - Create base theme (no inheritance)
+- [x] Style  - Codeblocks https://css-tricks.com/web-component-for-a-code-block/
+
+
+- [ ] Fix: Animate in view https://codepen.io/jamesdoc/pen/qBbeOym
+
+- [ ] Feat - Add Pages with dynamic content
+- [ ] Feat - Add CPTs
+- [ ] Feat - Improve 404 page
+
+- [x] SEO - [Add GA](https://nextjs.org/docs/messages/next-script-for-ga)
+- [ ] SEO - Sitemaps
+- [ ] SEO - Link Tracking
+- [ ] SEO - Review Content
+
+
+
+
+
+- [ ] Migrate old Fronity work: Primitive Mountains | Beautiful Views
+- [ ] Migrate old Fronity work: Primitive Rocks / Pebbles
+- [ ] Migrate/redo old Fronity work: Primitive Scenes
+
+- [ ] DevOps - Sort repo / branch structure
+- [ ] DevOps - Add custom deployment
+- [ ] CI/CD - Add GitHub Actions
+
+- [ ] Add [WPGraphQL Content Blocks](https://github.com/wpengine/wp-graphql-content-blocks)
+- [ ] Refine/simplify themeable/config: Tailwind, CSS-IN-JS or Sass approached used [Faust.js](https://faustjs.org/)
+- [ ] Is [Faust.js](https://faustjs.org/guide/how-to-use-the-faust-example-project) all copied from Frontity?
+- [ ] Implement Embeddable mode as per: [Faust.js](https://faustjs.org/) / [Frontity](https://api.frontity.org/frontity-plugins/)
+
+### Test emoji table
+
+Function | MySQL / MariaDB | PostgreSQL | SQLite
+:------------ | :-------------| :-------------| :-------------
+substr | :heavy_check_mark: |  :white_check_mark: | :heavy_check_mark:
 
 
 ### This is based on the Next.js Starter Example
