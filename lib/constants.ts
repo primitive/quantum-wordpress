@@ -7,11 +7,11 @@ export const SITE_TITLE = 'SKNOW.IT | Design & Development done with Style'
 export const SITE_NAME = 'SKNOW.it'
 export const SITE_TAGLINE = 'Builders of a Better Web'
 export const SITE_BANNER_TEXT = '🖖 Greetings, this site is a beta test & in active development: '
-export const SITE_BANNER_LINK = '/posts/headless-wordpress'
+export const SITE_BANNER_LINK = 'https://sknow.it/posts/next-generation-eco-websites/?utm_source=website&utm_medium=banner&utm_campaign=quantum_wp&utm_content=site_banner_link'
 export const SITE_BANNER_LINK_TEXT = 'Learn More'
 export const THEME_NAME = 'Blog.it'
 export const THEME_HEADER = ' ❦ Prototype theme for Quantum WordPress'
-export const INTRO_TEXT = "I'm Shaun a Creative Developer from the UK. I build websites & applications with a focus on design, performance and measurability. I'm avaiable for hire, so if you have a project in mind:"
+export const INTRO_TEXT = "I'm Shaun a Creative Developer from the UK. I build websites & applications with a focus on design, performance and measurability. If you want to a new website or app then:"
 export const INTRO_TEXT2 = ''
 export const INTRO_CTA = 'Get in Touch.'
 export const INTRO_CTA_LINK = 'mailto:hi@primitivedigital.uk'
