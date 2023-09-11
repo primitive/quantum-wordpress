@@ -10,7 +10,7 @@ export default function PostHeader({
 
       <div className="relative">
 
-        <div className="mb-8 md:mb-6 sm:mx-0 shadow-small border-solid border-4 border-t-8 border-primary rounded-tr-[6rem] overflow-hidden animate-fade animate-once animate-ease-in animate-delay-[300ms] animate-duration-[1100ms]">
+        <div className="object-cover min-h-[250px] mb-8 md:mb-6 sm:mx-0 shadow-small border-solid border-4 border-t-8 border-primary rounded-tr-[6rem] overflow-hidden animate-fade animate-once animate-ease-in animate-delay-[300ms] animate-duration-[1100ms]">
           <CoverImage title={title} coverImage={coverImage} />
         </div>
 
