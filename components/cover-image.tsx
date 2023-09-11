@@ -24,7 +24,9 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
       })}
       style={{
         maxWidth: "100%",
-        height: "auto"
+        height: "auto",
+        objectFit: "cover",
+        minHeight: "250px",
       }} />
   )
   return (
