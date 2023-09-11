@@ -13,6 +13,7 @@ import Layout from '../../components/layout'
 import GA from '../../components/seo-ga'
 import PostTitle from '../../components/post-title'
 import Tags from '../../components/tags'
+import ContactForm from '../../components/form-contact'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import { SITE_TITLE } from '../../lib/constants'
 
@@ -48,6 +49,9 @@ export default function Post({ post, posts, preview }) {
                 coverImage={post.featuredImage}
               />
               <PostBody content={post.content} />
+
+              <ContactForm />
+
               <PostMeta 
                   date={post.date}
                   author={post.author}
