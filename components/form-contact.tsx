@@ -20,32 +20,78 @@ function Form({ handler, isLoading, isSent, hasError }) {
       onSubmit={handleFormSubmit}
       className="wpcf7-form"
       >
-      <div>isLoading: {isLoading ? "Loading" : "false"}</div>
-      <div>isSent: {isSent ? "Sent" : "false"}</div>
-      <div>Error: {hasError || "null"}</div>
+      {/* debug
+        <div>isLoading: {isLoading ? "Loading" : "false"}</div>
+        <div>isSent: {isSent ? "Sent" : "false"}</div>
+        <div>Error: {hasError || "null"}</div>
+      */}
 
-      <div className="mb-4 row-auto">
-        <label className="block text-gray-700 text-sm font-bold mb-2" for="your-name">
+      <div className="mb-4 flex">
+        <label className="block w-20 text-gray-700 text-sm font-bold pr-2 pt-2" htmlFor="your-name">
           Name
         </label>
         <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="your-name" type="text" placeholder="Username"
+          className="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="your-name" type="text" placeholder="Your Name"
           onChange={(e) => handleFieldChange("your-name", e)} 
           />
       </div>
 
-      <div>Your name:</div>
-      <input onChange={(e) => handleFieldChange("your-name", e)} type="text" />
-      <div>Your email:</div>
-      <input onChange={(e) => handleFieldChange("your-email", e)} type="text" />
-      <div>Enter your phone:</div>
-      <input onChange={(e) => handleFieldChange("your-phone", e)} type="text" />
-      <div>Subject:</div>
-      <input onChange={(e) => handleFieldChange("your-subject", e)} type="text" />
-      <div>Message:</div>
-      <input onChange={(e) => handleFieldChange("your-message", e)} type="text" />
-      <input type="submit" value="Send" />
+      <div className="mb-4 flex">
+        <label className="block w-20 text-gray-700 text-sm font-bold pr-2 pt-2" htmlFor="your-email">
+          Email
+        </label>
+        <input
+          className="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="your-email" type="text" placeholder="Contact Email"
+          onChange={(e) => handleFieldChange("your-email", e)} 
+          />
+      </div>
+
+      <div className="mb-4 flex">
+        <label className="block w-20 text-gray-700 text-sm font-bold pr-2 pt-2" htmlFor="your-phone">
+          Phone
+        </label>
+        <input
+          className="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="your-phone" type="text" placeholder="Contact Number"
+          onChange={(e) => handleFieldChange("your-phone", e)} 
+          />
+      </div>
+
+      <div className="mb-4 flex">
+        <label className="block w-20 text-gray-700 text-sm font-bold pr-2 pt-2" htmlFor="your-subject">
+          Subject
+        </label>
+        <input
+          className="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="your-subject" type="text" placeholder="Contact Reason"
+          onChange={(e) => handleFieldChange("your-subject", e)} 
+          />
+      </div>
+
+      <div className="mb-4 flex">
+        <label className="block w-20 text-gray-700 text-sm font-bold pr-2 pt-2 mb-1" htmlFor="your-message">
+          Message
+        </label>
+        <textarea
+          className="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="your-message" placeholder="Your Message"
+          onChange={(e) => handleFieldChange("your-message", e)} 
+          />
+      </div>
+
+      {hasError &&
+        <div className="mb-2 mt-4 flex">
+          <p className="flex-1 text-center text-red-700 text-sm"> {hasError} </p>
+        </div>
+      }
+
+      <div className="mb-4 mt-8 flex">
+        {isSent ? <p className="flex-1 text-center">Message sent, thank you!</p> :
+          <input type="submit" value="Send Message" className="w-80 mx-auto bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline tracking-wider transition-colors"/>
+        }
+      </div>
     </form>
   )
 }
@@ -53,7 +99,7 @@ function Form({ handler, isLoading, isSent, hasError }) {
 export default function ContactForm() {
   return (
     <div id="get-in-touch" className="wpcf7 max-w-2xl px-8 pt-6 pb-8 mx-auto mb-4 bg-white shadow-md rounded ">
-      <h2 className="text-center mb-2 text-6xl md:text-7xl font-bold tracking-tighter leading-tight" id="get-in-touch">GET IN TOUCH</h2>
+      <h2 className="text-center mt-2 mb-6 text-6xl md:text-7xl font-bold tracking-tighter leading-tight" id="get-in-touch">GET IN TOUCH</h2>
       <Cf7FormWrapper
         url=""
         siteUrl="https://get2.sknow.it/"
