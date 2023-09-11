@@ -8,7 +8,7 @@ export default function Avatar({ author }) {
 
   return (
     <div className="flex items-center">
-      <div className="w-12 h-12 relative mr-4">
+      <div className="w-12 h-12 relative mr-4 ml-auto">
         <Image
           src={author.node.avatar.url}
           className="rounded-full"
@@ -16,7 +16,7 @@ export default function Avatar({ author }) {
           fill
           sizes="100vw" />
       </div>
-      <div className="text-xl font-bold">{name}</div>
+      <div className="block text-xl font-bold mr-auto">{name}</div>
     </div>
   );
 }
