@@ -5,7 +5,7 @@
   :root {
     --color-black: 44, 45, 72;
     --color-primary: 189, 123, 0;
-    --color-secondary: 111 114 185;
+    --color-secondary: 46 33 15;
     --color-warning: 255 115 179;
     --color-bg-hsl: 34, 100, 92;
     --color-font-rgb: 26, 14, 0;
@@ -121,7 +121,7 @@ a.mpen:hover:after {
 
 .btn-primary {
   @apply inline-block bg-secondary text-amber-100 text-sm no-underline py-2 px-6 mt-4 border-2 border-primary rounded-lg;
-  box-shadow: -1px 1px 10px rgba(var(--color-font-rgb), .5);
+  box-shadow: 1px 0px 4px rgba(var(--color-font-rgb), .5);
   transition: all .4s ease;
 }
 .btn-primary:hover {
@@ -237,7 +237,7 @@ a.mpen:hover:after {
 */
 ::-webkit-scrollbar {
   width: 18px;
-  background-color: rgba(000,000,000, 0.1);
+  background-color: rgba(var(--color-bg-accent-1) / 0.9);
   box-shadow: inset 7px 0 6px -3px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-thumb {
@@ -416,4 +416,32 @@ a.mpen:hover:after {
 a.wp-block-button__link,
 a.wp-block-button__link:hover {
   background-color: black;
+}
+
+/* STYLE CTA */
+.wp-block-group-is-layout-flow {
+  border-top: 6px solid rgb(var(--color-primary));
+  border-bottom: 3px solid rgb(var(--color-secondary));
+}
+.wp-block-group__inner-container .wp-block-heading {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.wp-block-group__inner-container .wp-block-button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wp-block-button__width-50 a {
+  display: block;
+  width: 30vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  text-decoration: none !important;
+  margin: auto;
 }
