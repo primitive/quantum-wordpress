@@ -134,7 +134,7 @@ a.mpen:hover:after {
 
 .btn-secondary {
   @apply inline-block bg-secondary text-amber-100 text-sm no-underline py-2 px-6 mt-4 border-2 border-primary rounded-lg;
-  box-shadow: -1px 1px 10px rgba(var(--color-font-rgb), .5);
+  box-shadow: 1px 0px 4px rgba(var(--color-font-rgb), .5);
   transition: all .4s ease;
 }
 .btn-secondary:hover {
@@ -425,22 +425,92 @@ a.wp-block-button__link:hover {
 .wp-block-group__inner-container .wp-block-heading {
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-top: 1rem;
 }
-
 .wp-block-group__inner-container .wp-block-button {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
-
-
+.wp-block-group__inner-container .has-small-font-size {
+  margin-bottom: 0;
+}
 .wp-block-button__width-50 a {
   display: block;
   width: 30vw;
+  min-width: 200px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
   text-decoration: none !important;
   margin: auto;
+  margin-top: 2rem;
+}
+
+
+/* Custom list bullets */
+ul.list-benefits {
+  padding-left: 2.1rem !important;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  border: 1px solid rgb(var(--color-primary));
+  border-left-width: 6px;
+}
+ul.list-benefits li {
+	list-style-type: ' 👍🏽 ';
+	font-size: 110%;
+  margin-bottom: .6rem;
+}
+
+ul.list-features {
+  padding-left: 2.1rem !important;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  border: 1px solid rgb(var(--color-primary));
+  border-left-width: 6px;
+}
+ul.list-features li {
+	list-style-type: ' 😃 ';
+	font-size: 110%;
+  margin-bottom: .6rem;
+}
+
+ul.list-celebrate {
+  padding-left: 2.1rem !important;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  border: 1px solid rgb(var(--color-secondary));
+  border-left-width: 6px;
+}
+ul.list-celebrate li {
+	list-style-type: ' 🥳 ';
+	font-size: 110%;
+  margin-bottom: .6rem;
+}
+
+ul.list-monkeys {
+  padding-left: 2.1rem !important;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  border: 1px solid rgb(var(--color-primary));
+  border-left-width: 6px;
+}
+ul.list-monkeys li {
+	list-style-type: ' 🙉 ';
+	font-size: 110%;
+  margin-bottom: .6rem;
+}
+
+ul.list-rocket {
+  padding-left: 2.1rem !important;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  border: 1px solid rgb(var(--color-secondary));
+  border-left-width: 6px;
+}
+ul.list-rocket li {
+	list-style-type: ' 🚀 ';
+	font-size: 110%;
+  margin-bottom: .6rem;
 }
