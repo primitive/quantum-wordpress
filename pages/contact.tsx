@@ -2,9 +2,9 @@ import Head from 'next/head'
 import { GetStaticProps } from 'next'
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
+import PageHeader from '../components/page-header'
 import Layout from '../components/layout'
+import ContactForm from '../components/form-contact'
 import { getAllPostsForHome } from '../lib/api'
 import { SITE_TITLE } from '../lib/constants'
 
@@ -18,17 +18,10 @@ export default function Index({ allPosts: { edges }, preview }) {
         <title>{SITE_TITLE}</title>
       </Head>
       <Container>
-        <Intro />
-        {heroPost && (
-          <HeroPost
-            title={heroPost.title}
-            coverImage={heroPost.featuredImage}
-            date={heroPost.date}
-            author={heroPost.author}
-            slug={heroPost.slug}
-            excerpt={heroPost.excerpt}
-          />
-        )}
+        <PageHeader />
+        <div className="lg:mb-20"></div>
+        <ContactForm />
+        <div className="mb-20"></div>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
     </Layout>
