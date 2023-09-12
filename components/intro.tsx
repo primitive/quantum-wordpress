@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
       <div>
-        <h1 className="text-6xl md:text-8xl font-display font-bold leading-tight text-shadow-custom md:pr-8 mpen">
+        <h1 className="text-7xl md:text-8xl font-display font-bold leading-tight text-shadow-custom md:pr-8 mpen">
           {SITE_NAME}
         </h1>
         <p className="text-center md:text-left md:text-lg md:pl-6 mt-[-1rem] md:mt-[-1.5rem]">
