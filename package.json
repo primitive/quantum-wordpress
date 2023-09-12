@@ -1,6 +1,6 @@
 {
   "name": "quantum-wordpress",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "description": "Starter Theme for Next.js Headless-WordPress deployments.",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "homepage": "",
-  "author": "Shaun Knowles <hi@primitivedigital.uk> (https://sknow.it/)",
+  "author": "Shaun Knowles <hi@primitivedigital.uk> (https://primitivedigital.uk/)",
   "license": "Apache-3.0",
   "repository": {
     "type": "git",
