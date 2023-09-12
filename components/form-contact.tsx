@@ -89,7 +89,7 @@ function Form({ handler, isLoading, isSent, hasError }) {
 
       <div className="mb-4 mt-8 flex">
         {isSent ? <p className="flex-1 text-center">Message sent, thank you!</p> :
-          <input type="submit" value="Send Message" className="w-80 mx-auto bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline tracking-wider transition-colors"/>
+          <input type="submit" value="Send Message" className="w-80 mx-auto bg-accent-1 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline tracking-wider transition-colors"/>
         }
       </div>
     </form>

@@ -16,6 +16,7 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
   const image = (
     <Image
       loading="eager"
+      priority={true}
       width={2000}
       height={1000}
       alt={`Cover Image for ${title}`}

@@ -12,10 +12,10 @@ export default function Intro() {
         </p>
       </div>
       <div>
-        <h3 className="text-2xl font-display font-bold leading-tight text-center text-shadow-custom md:text-left mt-5 md:pl-8">
+        <h2 className="text-2xl font-display font-bold leading-tight text-center text-shadow-custom md:text-left mt-5 md:pl-8">
           {THEME_NAME} <span className="font-sans text-lg text-secondary">{THEME_HEADER}</span>
-        </h3>
-        <h4 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
+        </h2>
+        <h3 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
           {INTRO_TEXT}{" "}
           <a
             href={INTRO_CTA_LINK}
@@ -23,7 +23,7 @@ export default function Intro() {
           >
             {INTRO_CTA}
           </a>
-        </h4>
+        </h3>
       </div>
     </section>
   );
