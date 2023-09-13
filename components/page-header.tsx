@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SITE_NAME, SITE_TAGLINE, THEME_NAME, PAGE_HEADER_TEXT, THEME_HEADER, INTRO_CTA, INTRO_CTA_LINK} from "../lib/constants";
+import { SITE_NAME, SITE_TAGLINE, THEME_NAME, PAGE_HEADER_TEXT, THEME_HEADER, PAGE_HEADER_CTA, PAGE_HEADER_CTA_LINK} from "../lib/constants";
 
 export default function Intro() {
   return (
@@ -21,10 +21,10 @@ export default function Intro() {
         <h4 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
           {PAGE_HEADER_TEXT}{" "}
           <a
-            href={INTRO_CTA_LINK}
+            href={PAGE_HEADER_CTA}
             className="underline hover:text-success duration-300 font-display transition-colors"
           >
-            {INTRO_CTA}
+            {PAGE_HEADER_CTA_LINK}
           </a>
         </h4>
       </div>

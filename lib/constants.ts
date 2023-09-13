@@ -30,9 +30,9 @@ export const HOME_OG_IMAGE_URL =
 export const MORE_POSTS_HEADER= 'More Articles'
 export const NAV_TEXT = 'CONTACT'
 export const NAV_TEXT_LINK = ' /contact'
-export const PAGE_HEADER_TEXT = 'Are you ready to take your business to the next level? We are developing a new generation of eco friendly websites and applications. '
+export const PAGE_HEADER_TEXT = 'Are you ready to take your business to the next level? We are developing a new generation of eco friendly websites and applications that are fast, secure and a joy to use.'
 export const PAGE_HEADER_CTA = 'Find out more'
-export const PAGE_HEADER_CTA_LINK = '/contact'
+export const PAGE_HEADER_CTA_LINK = '/next-generation-eco-websites'
 
 // ignore for now, new PH/PD content not published
 // ?utm_source=website&utm_medium=banner&utm_campaign=quantum_wp&utm_content=site_banner_link'
