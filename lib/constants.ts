@@ -3,7 +3,7 @@ export const FONTS_URL = 'https://use.typekit.net/xwn1evh.css'
 export const CMS_NAME = 'WordPress'
 export const CMS_URL = 'https://wordpress.org'
 
-export const SITE_TITLE = 'Primitive Digital | Development with Style & Panache'
+export const SITE_TITLE = 'Primitive Digital ➼ Development with Style & Panache'
 export const SITE_NAME = 'SKNOW.IT'
 export const SITE_TAGLINE = 'BUILDING A BETTER WEB'
 export const SITE_BANNER_TEXT = '🖖 Greetings, this site is prototype for low code CMS deployments: '
@@ -11,7 +11,7 @@ export const SITE_BANNER_LINK = 'https://sknow.it/posts/next-generation-eco-webs
 export const SITE_BANNER_LINK_TEXT = 'Discover More'
 export const THEME_NAME = 'Blog.it'
 export const THEME_HEADER = ' ❦ theme for Quantum WordPress'
-export const INTRO_TEXT = "I'm Shaun a Creative Developer from the UK. I build websites & applications with a focus on design, performance and measurability. If you want to a new website or app then:"
+export const INTRO_TEXT = "Creative Development from the heart of Yorkshire. We build “proper good” websites & applications with a focus on design, performance, measurability and value. If you want to a new website or app then:"
 export const INTRO_TEXT2 = ''
 export const INTRO_CTA = 'Get in Touch.'
 export const INTRO_CTA_LINK = '/contact'
