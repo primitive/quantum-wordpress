@@ -21,10 +21,10 @@ export default function Intro() {
         <h4 className="font-sans text-center text-shadow-custom md:text-left text-lg mt-5 md:pl-8">
           {PAGE_HEADER_TEXT}{" "}
           <a
-            href={PAGE_HEADER_CTA}
+            href={PAGE_HEADER_CTA_LINK}
             className="underline hover:text-success duration-300 font-display transition-colors"
           >
-            {PAGE_HEADER_CTA_LINK}
+            {PAGE_HEADER_CTA}
           </a>
         </h4>
       </div>
