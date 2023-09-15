@@ -14,17 +14,23 @@ import GA from '../components/seo-ga'
 import PostTitle from '../components/post-title'
 import Tags from '../components/tags'
 import ContactForm from '../components/form-contact'
-import { getPageByURI, getAllPostsWithSlug, getPostAndMorePosts } from '../lib/api'
+// import { getPageByURI, getAllPostsWithSlug, getPageAndMorePosts } from '../lib/api'
+import { getAllPagesWithSlugs, getPageBySlug  } from '../lib/api'
 import { SITE_TITLE } from '../lib/constants'
 
 
-export default function Post({ post, posts, preview }) {
-  const router = useRouter()
-  const morePosts = posts?.edges
+export default function Page(page) {
+// export default function Page({ page, posts, preview }) {
+const router = useRouter()
+// const morePosts = posts?.edges
 
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !page?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+const preview = false;
+
+console.log('page', page)
 
   return (
     <Layout preview={preview}>
@@ -37,34 +43,34 @@ export default function Post({ post, posts, preview }) {
             <article>
               <Head>
                 <title>
-                  {`${post.title} | ${SITE_TITLE}`}
+                  {`${page.title} / ${SITE_TITLE}`}
                 </title>
                 <meta
                   property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
+                  content={page.featuredImage?.node.sourceUrl}
                 />
               </Head>
               <GA />
               <PostHeader
-                title={post.title}
-                coverImage={post.featuredImage}
+                title={page.title}
+                coverImage={page.featuredImage}
               />
-              <PostBody content={post.content} />
+              <PostBody content={page.content} />
 
               <ContactForm />
 
-              <PostMeta 
-                  date={post.date}
-                  author={post.author}
-                  categories={post.categories}
-              />
+              {/* <PostMeta 
+                  date={page.date}
+                  author={page.author}
+                  categories={page.categories}
+              /> */}
               <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
+                {/* {page.tags.edges.length > 0 && <Tags tags={page.tags} />} */}
               </footer>
             </article>
 
             <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
           </>
         )}
       </Container>
@@ -72,28 +78,105 @@ export default function Post({ post, posts, preview }) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  params,
-  preview = false,
-  previewData,
-}) => {
-  const data = await getPostAndMorePosts(params?.slug, preview, previewData)
+// ADV. > needs refactoring
+// export default function Page({ page, posts, preview }) {
 
-  return {
-    props: {
-      preview,
-      post: data.post,
-      posts: data.posts,
-    },
-    revalidate: 10,
-  }
+// const router = useRouter()
+// const morePosts = posts?.edges
+
+//   if (!router.isFallback && !page?.slug) {
+//     return <ErrorPage statusCode={404} />
+//   }
+
+//   return (
+//     <Layout preview={preview}>
+//       <Container>
+//         <Header />
+//         {router.isFallback ? (
+//           <PostTitle>Loading…</PostTitle>
+//         ) : (
+//           <>
+//             <article>
+//               <Head>
+//                 <title>
+//                   {`${page.title} | ${SITE_TITLE}`}
+//                 </title>
+//                 <meta
+//                   property="og:image"
+//                   content={page.featuredImage?.node.sourceUrl}
+//                 />
+//               </Head>
+//               <GA />
+//               <PostHeader
+//                 title={page.title}
+//                 coverImage={page.featuredImage}
+//               />
+//               <PostBody content={page.content} />
+
+//               <ContactForm />
+
+//               <PostMeta 
+//                   date={page.date}
+//                   author={page.author}
+//                   categories={page.categories}
+//               />
+//               <footer>
+//                 {page.tags.edges.length > 0 && <Tags tags={page.tags} />}
+//               </footer>
+//             </article>
+
+//             <SectionSeparator />
+//             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+//           </>
+//         )}
+//       </Container>
+//     </Layout>
+//   )
+// }
+
+
+// BASICS > working
+export async function getStaticProps({ params }) {
+  const page = await getPageBySlug(params.slug);
+  return { props: page };
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = await getAllPostsWithSlug()
+// ADV. > needs refactoring
+// export const getStaticProps: GetStaticProps = async ({
+//   params,
+//   preview = false,
+//   previewData,
+// }) => {
+//   const data = await getPageAndMorePosts(params?.slug, preview, previewData)
 
+//   return {
+//     props: {
+//       preview,
+//       page: data.page,
+//       posts: data.posts,
+//     },
+//     revalidate: 10,
+//   }
+// }
+
+// BASICS > working
+export async function getStaticPaths() {
+  const pagesWithSlugs = await getAllPagesWithSlugs();
   return {
-    paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
+    paths: pagesWithSlugs.edges.map(({ node }) => `/${node.slug}`) || [],
     fallback: true,
-  }
+  };
 }
+
+// ADV. > needs refactoring
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const allPosts = await getAllPostsWithSlug()
+//   //const allPosts = await getPageByURI()
+
+//   return {
+//     paths: allPosts.edges.map(({ node }) => `/${node.slug}`) || [],
+//     fallback: true,
+//   }
+// }
+
+
