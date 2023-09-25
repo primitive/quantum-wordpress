@@ -156,7 +156,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const pagesWithSlugs = await getAllPagesWithSlugs();
 
-  // console.log(pagesWithSlugs.edges);
+  console.log("1", pagesWithSlugs.edges);
 
   // sk-dev: workaround filter out the blog posts page
 
@@ -164,12 +164,12 @@ export async function getStaticPaths() {
     return obj.node.slug !== "blog";
   });
 
-  // console.log("2", pagesWithSlugs2);
+  console.log("2", pagesWithSlugs2);
 
   return {
     // paths: pagesWithSlugs.edges.map(({ node }) => `/${node.slug}`) || [],
     paths: pagesWithSlugs2.map(({ node }) => `/${node.slug}`) || [],
-    fallback: true,
+    fallback: false,
   };
 }
 
