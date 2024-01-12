@@ -8,8 +8,7 @@ import ContactForm from '../components/form-contact'
 import { getAllPostsForHome } from '../lib/api'
 import { SITE_TITLE } from '../lib/constants'
 
-export default function Index({ allPosts: { edges }, preview }) {
-  const heroPost = edges[0]?.node
+export default function Contact({ allPosts: { edges }, preview }) {
   const morePosts = edges.slice(1)
 
   return (
