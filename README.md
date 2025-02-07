@@ -1,6 +1,6 @@
 
 # Quantum WordPress
-![screenshot](docs/pd-quantum-wordpress.png)
+![](docs/pd-quantum-wordpress.png)
 
 <hr>
 <div align="center">
@@ -47,6 +47,8 @@
 - [Tailwind CSS](https://tailwindcss.com/) for rapid styling and customisation
 - [Tailwindcss animated](https://www.tailwindcss-animated.com/) for easy to impliment animations via the [configurator](https://www.tailwindcss-animated.com/configurator.html) tool
 - [WPGraphQL](https://www.wpgraphql.com/) for optimised WordPress data fetching
+
+https://vercel.com/guides/how-to-enable-cors
 
 
 
