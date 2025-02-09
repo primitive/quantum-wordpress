@@ -33,10 +33,9 @@
     "postcss": "8.4.14",
     "tailwindcss": "^3.0.24"
   },
-
-    "engines": {
-      "node": "18.x"
-    },
+  "engines": {
+    "node": "18.x"
+  },
   "volta": {
     "node": "18.17.1"
   }
